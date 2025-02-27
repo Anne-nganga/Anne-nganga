@@ -1,6 +1,4 @@
-## Hi there 👋
 
-<!--
 **Hi 👋 My nameHi 👋 My name is Anne njeri nganga
 ==================================
 
