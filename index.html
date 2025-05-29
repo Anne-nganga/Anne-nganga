@@ -1,63 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PharmaCare</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="" method="">
-        <fieldset>
-            <legend>personal information</legend>
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" placeholder="enter first Name" required><br><br>
-            
-            <label for="lastName">last Name:</label>
-            <input type="text" id="lastName" name="lastName" placeholder="enter lastNameName" required><br><br>
+  <header>
+    <nav class="navbar">
+      <div class="logo">PharmaCare</div>
+      <ul class="nav-links">
+        <li>Home</li>
+        <li>Services</li>
+        <li>Pharmacists</li>
+        <li>Resources</li>
+        <li>Contact</li>
+        <li>Medication</li>
+      </ul>
+    </nav>
+  </header>
 
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob" required><br><br>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Support for Your Health & Wellness</h1>
+      <p>Connect with trusted pharmacists and wellness professionals to support your journey.</p>
+      <button>Get Started</button>
+    </div>
+    <div class="hero-img">
+     <img src="images/cashier.jpeg" alt="pharmacy cashier" />
+    </div>
+  </section>
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="enter email" required><br><br>
+  <section class="section">
+    <div class="text-block">
+      <h3>How It Works</h3>
+      <h2>We Help You Prioritize Your Health</h2>
+      <p>Browse pharmacies, book consultations, and get expert advice with ease.</p>
+      <button>Find a Pharmacy</button>
+    </div>
+    <div class="image-block">
+      <img src="images/med-shelves.jpeg" alt="medicine" />
+    </div>
+  </section>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="Phone" name="Phone" placeholder="enter Phone Number" required><br><br>
-
-            <label>Gender:</label><br>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">female</label><br>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">male</label><br><br>
-        </fieldset>
-
-        <fieldset>
-            <legend>enrollment details</legend>
-            <label for="course">course of study:</label>
-            <select id="course" name="course" required>
-                <option value="">select course</option>
-                <option value="cs">computer science</option>
-                <option value="ee">electrical engineering</option>
-                <option value="ba">Business administration</option>
-                <option value="ma">mathematics</option>
-            </select><br><br>
-
-            <label for="year">year of study:</label>
-            <input type="number" id="year" name="year" min="1" max="4" required><br><br>
-
-            <label for="StartDate">Start Date:</label>
-            <input type="date" id="StartDate" name="StartDate" required><br><br>
-
-             <label for="comments">additional comments:</label><br>
-             <textarea id="comments" name="comments" rows="4" cols="50" 
-             placeholder="enter any comments"></textarea><br><br>
-             
-             <label for="file">Upload ID:</label>
-            <input type="FILE" id="file" name="file" accept="image/*,.pdf><br><br>
-        </fieldset>
-
-        <button type="submit">Register</button>
-        <button type="reset">clear form</button>
-    </form>
+  <section class="section services">
+    <h3>Services</h3>
+    <h2>Your Path to Better Health</h2>
+    <p>Expert guidance for a balanced and healthier life.</p>
+    <div class="cards">
+      <div class="card card-left">
+        <h4>Prescription Management</h4>
+        <p>Refills, reminders, and consultations for your prescriptions.</p>
+        <button>Learn More</button>
+      </div>
+      <div class="image-block">
+        <img src="images/meds.jpeg" alt="pharmacy shelves">
+      </div>
+      <div class="card card-right">
+        <h4>Health Consultations</h4>
+        <p>Book one-on-one consultations with certified pharmacists.</p>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
