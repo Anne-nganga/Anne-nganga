@@ -282,20 +282,20 @@ header {
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f2f5; /* Light gray background */
+    background-color: #f0f2f5;
     display: flex;
     justify-content: center;
-    align-items: flex-end; /* Align to the bottom of the viewport initially */
-    min-height: 100vh; /* Ensure it takes full viewport height */
-    padding-bottom: 50px; /* Add some padding to the bottom */
+    align-items: flex-end;
+    min-height: 100vh;
+    padding-bottom: 50px; 
     box-sizing: border-box;
 }
 
 .footer-container {
     display: flex;
-    gap: 20px; /* Space between the two main boxes */
+    gap: 20px; 
     width: 100%;
-    max-width: 1000px; /* Max width to contain the content */
+    max-width: 1000px; 
     padding: 20px;
     box-sizing: border-box;
 }
@@ -303,9 +303,9 @@ body {
 .Pharmacare-info-box {
     background-color: #ffffff;
     border-radius: 15px;
-    padding: 40px 50px; /* Adjust padding for spacing */
+    padding: 40px 50px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    flex: 1; /* Allow this box to grow and shrink */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -315,14 +315,14 @@ body {
     font-size: 2em;
     font-weight: 600;
     color: #333;
-    margin-bottom: 30px; /* Space below the title */
+    margin-bottom: 30px;
 }
 
 .links-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px 0px; /* Vertical spacing only */
-    margin-bottom: 50px; /* Space above copyright */
+    gap: 15px 0px;
+    margin-bottom: 50px;
 }
 
 .links-grid a {
@@ -333,37 +333,37 @@ body {
 }
 
 .links-grid a:hover {
-    color: #007bff; /* Example hover color */
+    color: #007bff;
 }
 
 .copyright {
     font-size: 0.85em;
     color: #888;
-    margin-top: auto; /* Pushes copyright to the bottom */
+    margin-top: auto; 
 }
 
 .support-box {
-    background-color: #1e5a5a; /* Dark teal background */
+    background-color: #1e5a5a;
     border-radius: 15px;
     padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #ffffff;
-    flex: 1; /* Allow this box to grow and shrink */
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    position: relative; /* For absolute positioning of decorative elements */
-    overflow: hidden; /* Hide overflowing decorative elements */
+    position: relative; 
+    overflow: hidden;
 }
 
 .support-text {
     font-size: 2.2em;
     font-weight: 600;
     line-height: 1.2;
-    margin-bottom: 30px; /* Space below text */
-    z-index: 1; /* Ensure text is above decorations */
+    margin-bottom: 30px; 
+    z-index: 1; 
 }
 
 .find-support-btn {
@@ -375,15 +375,13 @@ body {
     font-weight: 600;
     font-size: 1em;
     transition: background-color 0.3s ease, color 0.3s ease;
-    z-index: 1; /* Ensure button is above decorations */
+    z-index: 1; 
 }
 
 .find-support-btn:hover {
     background-color: #f0f0f0;
 }
 
-/* Decorative elements (adjust positions and colors as needed) */
-.decoration {
     position: absolute;
     z-index: 0;
     opacity: 0.8;
@@ -392,7 +390,7 @@ body {
 .flower-green {
     width: 30px;
     height: 30px;
-    background-color: #72e0a2; /* Light green */
+    background-color: #72e0a2; 
     border-radius: 50%;
     top: 20px;
     right: 40px;
@@ -424,7 +422,7 @@ body {
 .flower-blue {
     width: 40px;
     height: 40px;
-    background-color: #a2e0e0; /* Light blue */
+    background-color: #a2e0e0;
     border-radius: 50%;
     top: 50px;
     right: 10px;
@@ -433,7 +431,7 @@ body {
 .flower-orange {
     width: 25px;
     height: 25px;
-    background-color: #ffc977; /* Light orange */
+    background-color: #ffc977;
     border-radius: 50%;
     bottom: 30px;
     right: 50px;
@@ -450,7 +448,7 @@ body {
     box-sizing: border-box;
     transform: rotate(-10deg);
     top: 10px;
-    right: -20px; /* Adjust to move it more off-screen */
+    right: -20px;
 }
 
 .rainbow:before, .rainbow:after {
@@ -459,13 +457,11 @@ body {
     border-radius: 50%;
     box-sizing: border-box;
 }
-
-/* Rainbow colors (from inside out) */
-.rainbow { border-color: #ffc977; } /* Orange */
+.rainbow { border-color: #ffc977; }
 .rainbow:before {
     width: 100px;
     height: 50px;
-    border-top: 10px solid #a2e0a2; /* Green */
+    border-top: 10px solid #a2e0a2;
     border-left: 10px solid #a2e0a2;
     border-right: 10px solid #a2e0a2;
     top: 0;
