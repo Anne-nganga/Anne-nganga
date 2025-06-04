@@ -279,3 +279,201 @@ header {
     color: white;
     border: none;
     padding: 15px 30px;
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align to the bottom of the viewport initially */
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    padding-bottom: 50px; /* Add some padding to the bottom */
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: flex;
+    gap: 20px; /* Space between the two main boxes */
+    width: 100%;
+    max-width: 1000px; /* Max width to contain the content */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.Pharmacare-info-box {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px 50px; /* Adjust padding for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    flex: 1; /* Allow this box to grow and shrink */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Pharmacare-title {
+    font-size: 2em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px; /* Space below the title */
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 0px; /* Vertical spacing only */
+    margin-bottom: 50px; /* Space above copyright */
+}
+
+.links-grid a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.links-grid a:hover {
+    color: #007bff; /* Example hover color */
+}
+
+.copyright {
+    font-size: 0.85em;
+    color: #888;
+    margin-top: auto; /* Pushes copyright to the bottom */
+}
+
+.support-box {
+    background-color: #1e5a5a; /* Dark teal background */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    flex: 1; /* Allow this box to grow and shrink */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative; /* For absolute positioning of decorative elements */
+    overflow: hidden; /* Hide overflowing decorative elements */
+}
+
+.support-text {
+    font-size: 2.2em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 30px; /* Space below text */
+    z-index: 1; /* Ensure text is above decorations */
+}
+
+.find-support-btn {
+    background-color: #ffffff;
+    color: #1e5a5a;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 1; /* Ensure button is above decorations */
+}
+
+.find-support-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Decorative elements (adjust positions and colors as needed) */
+.decoration {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.flower-green {
+    width: 30px;
+    height: 30px;
+    background-color: #72e0a2; /* Light green */
+    border-radius: 50%;
+    top: 20px;
+    right: 40px;
+    transform: rotate(45deg);
+}
+
+.flower-green::before,
+.flower-green::after {
+    content: '';
+    position: absolute;
+    background-color: #72e0a2;
+    border-radius: 50%;
+}
+
+.flower-green::before {
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: 5px;
+}
+
+.flower-green::after {
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    left: -5px;
+}
+
+.flower-blue {
+    width: 40px;
+    height: 40px;
+    background-color: #a2e0e0; /* Light blue */
+    border-radius: 50%;
+    top: 50px;
+    right: 10px;
+}
+
+.flower-orange {
+    width: 25px;
+    height: 25px;
+    background-color: #ffc977; /* Light orange */
+    border-radius: 50%;
+    bottom: 30px;
+    right: 50px;
+}
+
+.rainbow {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    border-radius: 60px 60px 0 0;
+    border-top: 10px solid;
+    border-left: 10px solid;
+    border-right: 10px solid;
+    box-sizing: border-box;
+    transform: rotate(-10deg);
+    top: 10px;
+    right: -20px; /* Adjust to move it more off-screen */
+}
+
+.rainbow:before, .rainbow:after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+/* Rainbow colors (from inside out) */
+.rainbow { border-color: #ffc977; } /* Orange */
+.rainbow:before {
+    width: 100px;
+    height: 50px;
+    border-top: 10px solid #a2e0a2; /* Green */
+    border-left: 10px solid #a2e0a2;
+    border-right: 10px solid #a2e0a2;
+    top: 0;
+    left: 0;
+    transform: scale(0.83);
+    transform-origin: top left;
+}
+.rainbow:after {
+    width: 80px;
+    height: 40px;
+    border-top: 10
